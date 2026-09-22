@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitness First Gym Wari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a href="#" class="logo"><img src="gym-logo.png" alt="gym"><span></span></a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+
+    <ul class="nav-links">
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#entry">Entry</a></li>
+      <li><a href="#load">Membership</a></li>
+      <li><a href="#coaches">Coaches</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#shop">Shop</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <button type="button" class="btn ghost" id="login-open-btn">Log In</button>
+      <a href="#load" class="btn">Join Now</a>
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-plate" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="backroundimage">
+    <span class="eyebrow">wari &middot; Strength &amp;Fitness </span>
+    <h1>Strength is <em>forged</em>,<br>not found.</h1>
+    <p class="hero-sub">Transform your dedication into real physical results at <b><mark style="text-transform: uppercase;">
+      Life Fitness Gym Wari</mark></b>
+      , where structured, science-backed training splits provide everything you need to build strength, consistency, and a stronger physique.
+        .</p>
+    <div class="hero-actions">
+      <a href="#load" class="btn">Start A Free Session</a>
+      <a href="#programs" class="btn ghost">See The Programs</a>
+    </div>
+    <div class="hero-meta">
+      <div>
+        <div class="num mono">6AM&ndash;11PM</div>
+        <div class="label">gym hours Hours</div>
+      </div>
+      <div>
+        <div class="num mono">14</div>
+        <div class="label">Competition Platforms</div>
+      </div>
+      <div>
+        <div class="num mono">312</div>
+        <div class="label">PRs Set This Month</div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Scan in, lift on</h2>
+      <p></p>
+    </div>
+    <div class="entry-inner">
+      <ol class="entry-steps">
+        <li>
+          <div>
+            <h4>Open your pass</h4>
+            <p>Pull up your member QR code from the confirmation email or the wallet card you were issued at sign-up.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h4>Scan at the gate</h4>
+            <p>Hold your code up to the scanner mounted at the entrance turnstile. Green light, door unlocks.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h4>You're on the floor</h4>
+            <p>Entry logs your check-in automatically — no sign-in sheet, no waiting on staff during peak hours.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h4>Lost your code?</h4>
+            <p>Show a coach your ID at the desk and they'll pull up your account and let you straight in.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="pass-card">
+        <span class="pass-tag">24/7</span>
+        <div class="qr-frame">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=280x280&margin=0&data=FOUNDRY-STRENGTH-CLUB-ENTRY" alt="QR code for gym gate entry — scan at the turnstile to check in" width="280" height="280" loading="lazy">
+        </div>
+<section id="entry" class="entry-section">
+  <h6>Manually add karain</h6>
+  <input type="text" id="nameInput" placeholder="Apna naam likhein">
+  <br>
+  <button id="checkBtn">ENTERY</button>
+ 
+  <p id="result"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="load" class="load-section">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Load your membership</h2>
+      <p>Same idea as loading a bar — start light, add plates as you commit to more.</p>
+    </div>
+
+    <div class="barbell" aria-hidden="true">
+      <div class="sleeve"></div>
+      <div class="bar-rod"></div>
+      <div class="plate-set">
+        <div class="plate" style="width:76px;height:76px;"><span class="kg">10<small>KG</small></span></div>
+      </div>
+      <div class="plate-set">
+        <div class="plate" style="width:104px;height:104px;"><span class="kg">20<small>KG</small></span></div>
+      </div>
+      <div class="plate-set">
+        <div class="plate accent" style="width:136px;height:136px;"><span class="kg">25<small>KG</small></span></div>
+      </div>
+      <div class="bar-rod"></div>
+      <div class="sleeve"></div>
+    </div>
+
+    <div class="tiers">
+      <div class="tier">
+        <div class="kg-lg mono">10KG</div>
+        <h3>Starter</h3>
+        <div class="price mono">Rs 1500<span>/mo</span></div>
+        <ul>
+          <li>Open floor access</li>
+          <li>Foundations program</li>
+          <li>Standard hours only</li>
+        </ul>
+        <a href="#" class="btn ghost" style="background-color: rgba(3, 114, 3, 0.61);">Start Starter</a>
+      </div>
+      <div class="tier">
+        <div class="kg-lg mono">20KG</div>
+        <h3>Foundry</h3>
+        <div class="price mono">Rs 4000<span>/mo</span></div>
+        <ul>
+          <li>Everything in Starter</li>
+          <li>Full program library</li>
+          <li>2x coached sessions/wk</li>
+          <li>24/7 floor access</li>
+        </ul>
+        <a href="#" class="btn ghost" style="background-color: rgba(107, 107, 1, 0.644);">Start Foundry</a>
+      </div>
+      <div class="tier is-elite">
+        <div class="kg-lg mono">25KG</div>
+        <h3>Elite</h3>
+        <div class="price mono">Rs 6000 <span>/mo</span></div>
+        <ul>
+          <li>Everything in Foundry</li>
+          <li>Personal Training </li>
+          <li>Meet-day coaching</li>
+          <li>Priority platform booking</li>
+        </ul>
+        <a href="#" class="btn">Start Elite</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="coaches">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Coaches On The Floor</h2>
+      <p>Every coach lifts competitively they program what they'd run themselves.</p>
+    </div>
+    <div class="coach-grid">
+      <div class="coach">
+        <div class="coach-photo"><img src="yasir-photo.jpeg" alt="yasir khan"></div>
+        <div class="coach-body">
+          <h3>YASIR KHAN</h3>
+          <div class="coach-role">Powerlifting</div>
+          <p>National-level totals across squat, bench, deadlift. Runs the meet-prep block.</p>
+        </div>
+      </div>
+      <div class="coach">
+        <div class="coach-photo">
+          <img src="gulzar-pic.jpeg" alt="gulzar Hilal">
+        </div>
+        <div class="coach-body">
+          <h3>GULZAR HILAL</h3>
+          <div class="coach-role">Strength &amp; Form</div>
+          <p>Gulzar Hilal is a certified calisthenics expert and coach,
+             dedicated to helping members build strength, control, and confidence using nothing but their own bodyweight.</p>
+        </div>
+      </div>
+      <div class="coach">
+
+        <div class="coach-photo">
+                        <img src="abdulaziz-pic.jpeg" alt="abdulaziz-pic">
+        </div>
+  
+        <div class="coach-body">
+          <h3>ABDUL AZIZ</h3>
+          <div class="coach-role">FITNESS</div>
+          <p>Years of experience, one simple approach push your limits and keep you coming back stronger.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Weekly schedule</h2>
+      <p>Drop into any coached session, or use open floor hours whenever the club is open.</p>
+    </div>
+    <table class="schedule-table">
+      <thead>
+        <tr><th>Day</th><th>Morning</th><th>Midday</th><th>Evening</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Monday</td><td><span class="slot">6:00 Strength</span></td><td><span class="slot">1:00 Open Floor</span></td><td><span class="slot">7:00 Powerlifting</span></td></tr>
+        <tr><td>Tuesday</td><td><span class="slot">6:00 Conditioning</span></td><td><span class="slot">1:00 Open Floor</span></td><td><span class="slot">7:00 Foundations</span></td></tr>
+        <tr><td>Wednesday</td><td><span class="slot">6:00 Strength</span></td><td><span class="slot">1:00 Open Floor</span></td><td><span class="slot">7:00 Powerlifting</span></td></tr>
+        <tr><td>Thursday</td><td><span class="slot">6:00 Conditioning</span></td><td><span class="slot">1:00 Open Floor</span></td><td><span class="slot">7:00 Foundations</span></td></tr>
+        <tr><td>Friday</td><td><span class="slot">6:00 Strength</span></td><td><span class="slot">1:00 Open Floor</span></td><td><span class="slot">7:00 Meet Prep</span></td></tr>
+        <tr><td>Saturday</td><td><span class="slot">8:00 Open Floor</span></td><td colspan="2"><span class="slot">10:00 Community Lift</span></td></tr>
+        <tr><td>Sunday</td><td colspan="3"><span class="slot">Floor closed &mdash; recover</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="shop" class="shop-section">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Shop the gear</h2>
+      <p>Gym shirts, mass gaine, belts and accessories — pick it up at the front desk or order online.</p>
+    </div>
+    <div class="shop-grid">
+      <!-- products are loaded here dynamically from the backend by script.js -->
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>From the fitness first gym wari</h2>
+      <p>What members say after their first block.</p>
+    </div>
+    <div class="quotes">
+      <div class="quote">
+        <p>"Added 40kg to my deadlift in four months. Nobody's yelling motivational nonsense at you here — the program just works."</p>
+        <div class="who">Zara N. &mdash; Foundry Member</div>
+      </div>
+      <div class="quote">
+        <p>"First gym where the coach actually watched my bar path instead of counting my reps from across the room."</p>
+        <div class="who">Danish A. &mdash; Strength Block</div>
+      </div>
+      <div class="quote">
+        <p>"Booked my first meet after six months in the Powerlifting Club. Total went up every single session."</p>
+        <div class="who">Mehak S. &mdash; Elite Member</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <span class="eyebrow"><b>Your first session is free</b></span>
+  <h2>Come put weight<br>on the bar.</h2>
+  <p>No tour, no sales pitch. Show up during any coached session and lift with us — we'll take it from there.</p>
+  <a href="#" class="btn">Book Your Free Session</a>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">Life Fitness Gym Wari<span>.</span></div>
+        <p>This isn't a feel good hour gym. It's a Life Fitness Gym Wari for people who want to see the number change</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>Basement Floor</li>
+          <li>Near Alfalah Bank Wari</li>
+          <li>Mon&ndash;Sat, 6AM&ndash;12PM</li>
+        </ul>
+      </div>
+      <div>
+        <h4>GYM</h4>
+        <ul>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#coaches">Coaches</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#load">Membership</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Tiktok</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Life Fitness Gym Wari</span>
+      <span>No shortcuts here just weight, chalk, and showing up.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== LOGIN / SIGNUP MODAL ===== -->
+<div class="modal-overlay" id="login-overlay">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="login-title">
+    <button type="button" class="modal-close" id="login-close-btn" aria-label="Close login form">&times;</button>
+    <span class="eyebrow">Members</span>
+    <h3 id="login-title">Log in</h3>
+
+    <form id="login-form">
+      <label for="login-name" id="login-name-label" style="display:none;">Name</label>
+      <input type="text" id="login-name" name="name" placeholder="Your name" style="display:none;">
+
+      <label for="login-email">Email</label>
+      <input type="email" id="login-email" name="email" placeholder="you@example.com" required>
+
+      <label for="login-password">Password</label>
+      <input type="password" id="login-password" name="password" placeholder="••••••••" required>
+
+      <button type="submit" class="btn" style="width:100%;margin-top:8px;" id="login-submit-btn">Log In</button>
+      <p class="modal-note" id="login-error" style="display:none;color:#C33A2C;"></p>
+      <p class="modal-note">
+        <span id="login-toggle-text">Don't have an account?</span>
+        <a href="#" id="login-toggle-link" style="color:#C33A2C;text-decoration:underline;">Sign up</a>
+      </p>
+    </form>
+
+    <div id="login-success" class="login-success" hidden>
+      <p id="login-success-message">You're logged in. Welcome back!</p>
+      <button type="button" class="btn ghost" id="logout-btn" style="margin-top:14px;">Log Out</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
